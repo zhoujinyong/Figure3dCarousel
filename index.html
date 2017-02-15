@@ -1,0 +1,93 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>jQuery分层轮播3d旋转切换</title>
+<style>
+body{ background-color:#2E2E2E}
+.zy-Slide section{ color: #FFFFFF; border-width: 1px; border-style: solid; }
+.zy-Slide{
+    font-size: 12px;
+    position:relative;
+    width:754px;
+    height:292px;
+    margin:115px auto 0;
+}
+.zy-Slide ul{
+    position:relative;
+    width:754px;
+    height:292px;
+    margin:0;
+    padding:0;
+}
+.zy-Slide li{
+    position:absolute;
+    list-style:none;
+    background:#000;
+    width:0;
+    height:0;
+    top:146px;
+    left:377px;
+    z-index:0;
+    cursor:pointer;
+    border-radius:3px;
+    margin:0;
+    padding:0;
+}
+.zy-Slide li img{
+    width:100%;
+    height:100%;
+    vertical-align:middle;
+}
+.zy-Slide section:nth-child(1), .zy-Slide section:nth-child(2){ position: absolute; top: 50%; width: 39px; height: 40px; margin-top: -20px; cursor: pointer; line-height: 40px; padding-left: 12px; padding-right: 12px; }
+.zy-Slide section:nth-child(1){
+    left:-75px;
+}
+.zy-Slide section:nth-child(2){
+    right:-75px;
+}	
+</style>
+
+</head>
+
+<body>
+<div id="Slide1" class="zy-Slide">
+	<!--prev:元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。-->
+	<section>前一张</section>
+	<section>后一张</section>
+	<ul>
+		<!--alt + shift : 可以创建一个矩形选择区域-->
+		<li><img src="images/1.jpg" /></li>
+		<li><img src="images/2.jpg" /></li>
+		<li><img src="images/3.jpg" /></li>
+		<li><img src="images/4.jpg" /></li>
+		<li><img src="images/5.jpg" /></li>
+		<li><img src="images/6.jpg" /></li>
+		<li><img src="images/7.jpg" /></li>
+	</ul>
+</div>
+<div id="Slide2" class="zy-Slide">
+	<!--prev:元素中的文本通常会保留空格和换行符。而文本也会呈现为等宽字体。-->
+	<section>前一张</section>
+	<section>后一张</section>
+	<ul>
+		<!--alt + shift : 可以创建一个矩形选择区域-->
+		<li><img src="images/4.jpg" /></li>
+		<li><img src="images/5.jpg" /></li>
+		<li><img src="images/6.jpg" /></li>
+		<li><img src="images/7.jpg" /></li>
+		<li><img src="images/1.jpg" /></li>
+		<li><img src="images/2.jpg" /></li>
+		<li><img src="images/3.jpg" /></li>
+	</ul>
+</div>
+
+<script src="jquery.min.js"></script>
+<script src="jquery.zySlide.js"></script>
+<script src="index.js"></script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';color:#ffffff">
+<p>适用浏览器：360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. 不支持IE8及以下浏览器。</p>
+</div>
+</body>
+</html>
